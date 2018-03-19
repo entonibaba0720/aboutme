@@ -1,0 +1,103 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  
+  
+  .container {
+    width: 60vw;
+    margin: 0 auto;
+    margin-top: 130px;
+    transform: rotate(15deg);
+  }
+  
+  .container h1 {
+    text-transform: uppercase;
+    font-family: 'Karla', sans-serif;
+    font-size: 2rem;
+    writing-mode: vertical-lr;
+    transform: rotate(180deg);
+    float: left;
+    margin-right: 20px;
+  
+  }
+  
+  .container p {
+    display: block;
+    font-family: 'Inconsolata', monospace;
+    text-align: justify;
+    line-height: 1.3rem;
+  }
+  
+  .knowledge {
+      margin-top: 20px;
+  }
+  
+  .links li {
+   list-style-type: none;
+    display: block;
+    padding: 8px;
+    border: 1px solid black;
+    float: right;
+    margin-left: 5px;
+    margin-top: 20px;
+  }
+  
+  .links li a {
+    color: black;
+  }
+  
+  .links li:hover {
+      transform: scale(1.1);
+  }
+  
+  .face {
+      display: block;
+      float: left;
+      margin-right: 20px;
+      position:relative;
+  }
+  
+  .image img {
+      position: absolute;
+      transition: all 1s ease-in-out;
+  }
+  
+  img:hover {
+    filter: grayscale(100%);
+      transform: scale(1.1);
+  }
+  
+  
+  @media screen and (max-width: 600px) {
+      .container {
+          width: 90vw;
+          margin: 0 auto;
+          transform: rotate(0deg);
+          display: block;
+      }
+      .container h1 {
+          font-size: 1.5rem;
+          writing-mode: horizontal-tb;
+          transform: rotate(0deg);
+          display: block;
+      width: 90vw;
+         margin-top: 20px;
+      text-align: center;
+      }
+      .face {
+          margin-bottom: 20px;
+          display: block;
+      align-items: center;
+      margin: 20px 120px;
+      }
+      .face img {
+          height: 15vh;
+      }
+      .container p {
+          float: right;
+      }
+  
+  }
